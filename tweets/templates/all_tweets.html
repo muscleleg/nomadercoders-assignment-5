@@ -1,0 +1,8 @@
+<ul>
+    {% for tweet in tweets %}
+        <li>
+            <a href="/tweets/{{ tweet.pk }}">{{ tweet.payload }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>
